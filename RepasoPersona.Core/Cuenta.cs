@@ -1,19 +1,16 @@
-﻿using System;
-
+using System;
 namespace RepasoPersona.Core 
 {
-    public class Persona : Clasabs
+    public class Cuenta : Clasabs
     {
-        public string Nombre { get; private set; }
-        public string Apellido { get; private set; }
-        public double Efectivo { get; private set; }
-        public Persona() => Efectivo = 0;
-        public Persona(string nombre, string apellido, double efectivo)
+        int CBU {get;set;}
+        double Efectivo {get;set;}
+        
+        public Cuenta(int cbu, double efectivo)
         {
-            Nombre = nombre;
-            Apellido = apellido;
+            CBU = cbu;
             Efectivo = efectivo;
-        } 
+        }
 
         public new void Debitar(double monto)
         {
@@ -27,7 +24,7 @@ namespace RepasoPersona.Core
         public new void Acreditar(double monto)
         {
             if (monto <= 0)
-                throw new ArgumentException("El monto tiene que ser mayor a cero.");
+                throw new Exception("El monto tiene que ser mayor a cero.");
             Efectivo += monto;
         }
     }

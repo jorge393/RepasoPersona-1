@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepasoPersona.Test", "Repas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuenta", "Cuenta\Cuenta.csproj", "{CC82FD76-6F70-460E-B1AC-6F82520D3368}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasAbs", "ClasAbs\ClasAbs.csproj", "{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{CC82FD76-6F70-460E-B1AC-6F82520D3368}.Release|x64.Build.0 = Release|Any CPU
 		{CC82FD76-6F70-460E-B1AC-6F82520D3368}.Release|x86.ActiveCfg = Release|Any CPU
 		{CC82FD76-6F70-460E-B1AC-6F82520D3368}.Release|x86.Build.0 = Release|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Release|x64.ActiveCfg = Release|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Release|x64.Build.0 = Release|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F37E861-79A4-4265-80B1-D3F95E8FFEAE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
