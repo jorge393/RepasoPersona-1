@@ -2,33 +2,20 @@
 
 namespace RepasoPersona.Core 
 {
-    public class Persona : Clasabs
+    public class Persona : EnteConSaldo
     {
+        
         public string Nombre { get; private set; }
         public string Apellido { get; private set; }
-        public double Efectivo { get; private set; }
-        public Persona() => Efectivo = 0;
+        public override double Saldo { get => base.Saldo; set => base.Saldo = value; }
+        public Persona() => Saldo = 0;
         public Persona(string nombre, string apellido, double efectivo)
         {
             Nombre = nombre;
             Apellido = apellido;
-            Efectivo = efectivo;
+            Saldo = efectivo;
         } 
 
-        public new void Debitar(double monto)
-        {
-            if (monto <= 0)
-                throw new ArgumentException("El monto tiene que ser mayor a cero.");
-
-            if (monto > Efectivo)
-                throw new InvalidOperationException("El monto supera al efectivo.");
-            Efectivo -= monto;
-        }
-        public new void Acreditar(double monto)
-        {
-            if (monto <= 0)
-                throw new ArgumentException("El monto tiene que ser mayor a cero.");
-            Efectivo += monto;
-        }
+        
     }
 }

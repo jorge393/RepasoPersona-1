@@ -15,7 +15,7 @@ namespace RepasoPersona.Test
         {
             Assert.Equal("Juan", Pepito.Nombre);
             Assert.Equal("Gomez", Pepito.Apellido);
-            Assert.Equal(0, Pepito.Efectivo);
+            Assert.Equal(0, Pepito.Saldo);
         }
 
         [Fact]
@@ -24,7 +24,7 @@ namespace RepasoPersona.Test
             double esperado = 1000;
             Pepito.Acreditar(esperado);
             
-            Assert.Equal(esperado, Pepito.Efectivo, 3);
+            Assert.Equal(esperado, Pepito.Saldo, 3);
         }
 
         [Theory]
@@ -44,7 +44,7 @@ namespace RepasoPersona.Test
             Pepito.Acreditar(monto);
             Pepito.Debitar(debito);
 
-            Assert.Equal(monto - debito, Pepito.Efectivo, 2);
+            Assert.Equal(monto - debito, Pepito.Saldo, 2);
         }
 
         [Fact]
