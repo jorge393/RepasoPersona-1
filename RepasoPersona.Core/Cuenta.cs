@@ -7,10 +7,9 @@ namespace RepasoPersona.Core
         
         Persona persona;
         
-        public Cuenta(int cbu, double saldo)
+        public Cuenta(int cbu)
         {
             CBU = cbu;
-           Saldo = saldo;
         }
 
         

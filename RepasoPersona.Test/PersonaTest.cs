@@ -8,11 +8,12 @@ namespace RepasoPersona.Test
     {
         public Persona Pepito { get; set; }
 
-        public PersonaTest() => Pepito = new Persona("Juan", "Gomez", 0);
+        public PersonaTest() => Pepito = new Persona(96144345, "Juan", "Gomez", 0);
 
         [Fact]
         public void Constructor()
         {
+            Assert.Equal(96144345, Pepito.DNI);
             Assert.Equal("Juan", Pepito.Nombre);
             Assert.Equal("Gomez", Pepito.Apellido);
             Assert.Equal(0, Pepito.Saldo);
