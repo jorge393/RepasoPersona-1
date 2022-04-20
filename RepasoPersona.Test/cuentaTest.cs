@@ -1,6 +1,6 @@
 namespace RepasoPersona.Test
 {
-    public class cuenta
+    public class cuentaTest
     {
         
     }
